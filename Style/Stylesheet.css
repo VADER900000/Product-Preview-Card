@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Monserrat';
+  src: url(/Assets/Fonts/Montserrat-VariableFont_wght.ttf); 
+}
+@font-face {
+  font-family: 'Fraunces';
+  src: url(/Assets/Fonts/Frances/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+
+
+body{
+  background-color: #f3eae3;
+}
+.mainContainer{
+  background-color: white;
+  border-radius: 10px;
+  height: 100vh;
+}
+.perfumeImage{
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.perfumeTitle{
+  font-family: 'Monserrat';
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.Perfumer-Creator{
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 2px;
+  padding-left: 15px;
+}
+.Paragraph{
+  font-family: 'Monserrat';
+  font-weight: 450;
+  color: #5f6065;
+  font-size: 1.2em;
+  padding-left: 20px;
+  padding-top: 1em;
+}
+.cartButton{
+  align-items: center;
+  text-align: center;
+}
+.Carty{
+  border: none;
+  background-color: #3d8168;
+  width: 90%;
+  height: 3em;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+.Carty:hover{
+  cursor: pointer;
+  background-color: #1a4031;
+}
+.prices{
+  padding-top: 2em;
+  padding-left: 20px;
+}
+.newPrice{
+  color: #3e876d;
+  font-family: 'Fraunces';
+  font-size: 2em;
+  font-weight: 700;
+
+}
+.oldPrice{
+  font-family: 'Monserrat';
+  text-decoration: line-through ;
+  padding-left: 10px;
+}
+.perfumeImage2{
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .mainContainer{
+    display: flex;
+    height: auto;
+    min-height: 35%;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    padding-right: 20px;
+    border-radius: 10px;
+  }
+  .perfumeImage2{
+    padding: 0px;
+    height: fit-content;
+    margin: 0px;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  .imgContainer{
+  height: 100%;
+  background-image: url('/images/image-product-desktop.jpg');
+  }
+  .perfumeImage{
+    border-radius: 10px;
+    display: none;
+    overflow: none;
+  }
+}
